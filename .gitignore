@@ -1,0 +1,8 @@
+Release_LTCG/
+Release/
+Debug/
+.svn/
+*.user
+/embed/launch.xex
+/embed/lhelper.xex
+/embed/Arial_12.xpr

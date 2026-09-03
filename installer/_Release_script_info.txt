@@ -1,0 +1,14 @@
+prebuild:
+cd Media
+call xresources.bat $(ProjectDir)Media\ $(ProjectDir)Media\skin.xzp $(ProjectDir)Media\xzp.txt 1
+cd..
+
+postbuild:
+xextool -r a -e d -o $(SolutionDir)Release\Installer\default.xex $(OutDir)$(ProjectName).xex
+copy /Y /B $(ProjectDir)Media\skin_src.zip $(SolutionDir)Release\skin_src.zip
+copy /Y /B $(SolutionDir)ReadMe\info_launch.ini $(SolutionDir)Release\info_launch.ini
+copy /Y /B $(SolutionDir)ReadMe\readme.txt $(SolutionDir)Release\readme.txt
+copy /Y /B $(SolutionDir)ReadMe\launch_sysdll_exports.c $(SolutionDir)Release\launch_sysdll_exports_examples.c
+copy /Y /B $(SolutionDir)ReadMe\templog.py $(SolutionDir)Release\templog.py
+del /q  $(SolutionDir)Release\for_xxbuild.zip
+zip -j $(SolutionDir)Release\for_xxbuild.zip $(SolutionDir)embed\readme.txt $(SolutionDir)embed\launch.xex $(SolutionDir)embed\lhelper.xex

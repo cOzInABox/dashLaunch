@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<xex>
+	<version major="2" minor="0" build="14719" qfe="0"/>.
+	<titleid id="0xFFFF011D"/>
+	<privilege id="0"/>
+	<privilege id="6"/>
+	<baseaddr addr = "0x92000000"/>
+
+	<format>
+		<compressed/>
+	</format>
+
+	<section file="..\embed\launch.xex" name="launch" memory="RO"/>
+	<section file="..\embed\lhelper.xex" name="lhelper" memory="RO"/>
+	<section file="..\embed\usvr.xex" name="usvr" memory="RO"/>
+	<section file="..\embed\1stage.bin" name="lxell" memory="RO"/>
+
+	<section file="..\embed\parc_9199.bin" name="p9199" memory="RO"/>
+	<section file="..\embed\parc_12611.bin" name="p12611" memory="RO"/>
+	<section file="..\embed\parc_12625.bin" name="p12625" memory="RO"/>
+	<section file="..\embed\parc_13146.bin" name="p13146" memory="RO"/>
+	<section file="..\embed\parc_13599.bin" name="p13599" memory="RO"/>
+	<section file="..\embed\parc_13604.bin" name="p13604" memory="RO"/>
+	<section file="..\embed\parc_14699.bin" name="p14699" memory="RO"/>
+	<section file="..\embed\parc_14717.bin" name="p14717" memory="RO"/>
+	<section file="..\embed\parc_14719.bin" name="p14719" memory="RO"/>
+	<section file="..\embed\parc_15574.bin" name="p15574" memory="RO"/>
+	<section file="..\embed\parc_16197.bin" name="p16197" memory="RO"/>
+	<section file="..\embed\parc_16202.bin" name="p16202" memory="RO"/>
+	<section file="..\embed\parc_16203.bin" name="p16203" memory="RO"/>
+	<section file="..\embed\parc_16537.bin" name="p16537" memory="RO"/>
+	<section file="..\embed\parc_16547.bin" name="p16547" memory="RO"/>
+	<section file="..\embed\parc_16747.bin" name="p16747" memory="RO"/>
+	<section file="..\embed\parc_16756.bin" name="p16756" memory="RO"/>
+	<section file="..\embed\parc_16767.bin" name="p16767" memory="RO"/>
+	<section file="..\embed\parc_17148.bin" name="p17148" memory="RO"/>
+	<section file="..\embed\parc_17150.bin" name="p17150" memory="RO"/>
+	<section file="..\embed\parc_17349.bin" name="p17349" memory="RO"/>
+	<section file="..\embed\parc_17489.bin" name="p17489" memory="RO"/>
+	<section file="..\embed\parc_17502.bin" name="p17502" memory="RO"/>
+	<section file="..\embed\parc_17511.bin" name="p17511" memory="RO"/>
+	<section file="..\embed\parc_17526.bin" name="p17526" memory="RO"/>
+	<section file="..\embed\parc_17544.bin" name="p17544" memory="RO"/>
+	<section file="..\embed\parc_17559.bin" name="p17559" memory="RO"/>
+
+
+</xex>

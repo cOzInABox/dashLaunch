@@ -1,0 +1,3 @@
+LIBRARY      ftpdll
+EXPORTS
+    szModuleName   @1 DATA

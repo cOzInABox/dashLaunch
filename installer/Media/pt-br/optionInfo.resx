@@ -1,0 +1,118 @@
+﻿<root>
+<data name="oopsie"><value>Desculpe, não existe descrição associada com esta opção (oops!)</value></data>
+<data name="opt_fil_paths"><value>Configura caminhos para os botões de inicialização rápida e do arquivo de relatórios de erros</value></data>
+<data name="opt_fil_behavior"><value>Configurações que afetam o comportamento do programa de sistema do seu XBOX 360</value></data>
+<data name="opt_fil_net"><value>Configurações relacionadas a rede e acesso à internet</value></data>
+<data name="opt_fil_timer"><value>Configurações dos temporizadores</value></data>
+<data name="opt_fil_plugins"><value>Configura caminhos para os plugins dll</value></data>
+<data name="opt_fil_extern"><value>Opções que definem o comportamento do Programa de Configuração</value></data>
+<data name="plugin1"><value>Plugin dll carregado com o DashLaunch durante a inicialização do console
+(Não pode ser descarregado da memória através do botão Descarregar!)</value></data>
+<data name="plugin2"><value>Plugin dll carregado com o DashLaunch durante a inicialização do console
+(Não pode ser descarregado da memória através do botão Descarregar!)</value></data>
+<data name="plugin3"><value>Plugin dll carregado com o DashLaunch durante a inicialização do console
+(Não pode ser descarregado da memória através do botão Descarregar!)</value></data>
+<data name="plugin4"><value>Plugin dll carregado com o DashLaunch durante a inicialização do console
+(Não pode ser descarregado da memória através do botão Descarregar!)</value></data>
+<data name="plugin5"><value>Plugin dll carregado com o DashLaunch durante a inicialização do console
+(Não pode ser descarregado da memória através do botão Descarregar!)</value></data>
+<data name="BUT_A"><value>Manter o botão 'A' pressionado durante a inicialização do console ou ao sair de jogos e aplicativos causa a execução do programa localizado no caminho especificado</value></data>
+<data name="BUT_B"><value>Manter o botão 'B' pressionado durante a inicialização do console ou ao sair de jogos e aplicativos causa a execução do programa localizado no caminho especificado</value></data>
+<data name="BUT_X"><value>Manter o botão 'X' pressionado durante a inicialização do console ou ao sair de jogos e aplicativos causa a execução do programa localizado no caminho especificado</value></data>
+<data name="BUT_Y"><value>Manter o botão 'Y' pressionado durante a inicialização do console ou ao sair de jogos e aplicativos causa a execução do programa localizado no caminho especificado</value></data>
+<data name="Start"><value>Manter o botão 'Start' pressionado durante a inicialização do console ou ao sair de jogos e aplicativos causa a execução do programa localizado no caminho especificado</value></data>
+<data name="Back"><value>Manter o botão 'Back' pressionado durante a inicialização do console ou ao sair de jogos e aplicativos causa a execução do programa localizado no caminho especificado</value></data>
+<data name="LBump"><value>Manter o botão 'LB' pressionado durante a inicialização do console ou ao sair de jogos e aplicativos causa a execução do programa localizado no caminho especificado</value></data>
+<data name="LThumb"><value>Manter o botão 'Direcional Analógico da Esquerda' pressionado durante a inicialização do console ou ao sair de jogos e aplicativos causa a execução do programa localizado no caminho especificado</value></data>
+<data name="RThumb"><value>Manter o botão 'Direcional Analógico da Direita' pressionado durante a inicialização do console ou ao sair de jogos e aplicativos causa a execução do programa localizado no caminho especificado</value></data>
+<data name="Default"><value>Se configurada, quando nenhum botão for mantido pressionado durante o carregamento da Dashboard, DashLaunch inicializa o programa especificado ao invés da Dashboard oficial
+</value></data>
+<data name="Guide"><value>Se configurada, ligar o console pelo controle remoto ou pelo botão 'Guia' do controle causa a execução do programa localizado no caminho especificado (uma vez)</value></data>
+<data name="Power"><value>Se configurada, ligar o console pelo botão 'Power' do console causa a execução do programa localizado no caminho especificado (uma vez)</value></data>
+<data name="dumpfile"><value>Relatórios de erros são gravados para este arquivo se a opção "exchandler" estiver habilitada</value></data>
+<data name="configapp"><value>A opção "Configurações do Sistema" no "Painel Xbox" causa a execução deste programa se o
+botão 'RB' não for mantido pressionado</value></data>
+<data name="nxemini"><value>Se habilitada, pressionar 'Y' no "Painel Xbox" da Dashboard oficial causa a inicialização de um evento</value></data>
+<data name="pingpatch"><value>Se habilitada, o limite de ping é removido para jogos via link de sistema</value></data>
+<data name="dvdexitdash"><value>Se habilitada, ejetar um DVD de jogo ou de Vídeo faz com que o console carregue a Dashboard oficial</value></data>
+<data name="xblaexitdash"><value>Se habilitada, sair de um jogo "XBOX Live Arcade" através do seu próprio menu faz com que o console carregue a Dashboard oficial</value></data>
+<data name="nosysexit"><value>Se habilitada, utilizar a opção "Configurações do Sistema" no "Painel Xbox" não permite que o console carregue a Dashboard oficial</value></data>
+<data name="regionspoof"><value>Se habilitada, manter o botão 'RB' pressionado durante a inicialização de um jogo modifica a região do console temporariamente para o valor configurado na opção "region"</value></data>
+<data name="region"><value>O valor correspondente a região desejada a ser utilizado pela opção "regionspoof"
+Valores válidos: 7FFF-DEVKIT/ALL, FF-USA, 1FE-JAP, 1FF-JAP, 2FE-EU, 201-AUS, 1FC-KOR, 101-HK</value></data>
+<data name="nohud"><value>Se habilitada, o "Painel Xbox" torna-se inacessível</value></data>
+<data name="noupdater"><value>Se habilitada, XAM é modificado para procurar atualizações do sistema na pasta $$ystemUpdate</value></data>
+<data name="signnotice"><value>Se habilitada, DashLaunch evita com que as mensagens irritantes de login da rede "XBOX Live" e
+"Diagnóstico de Rede" apareçam</value></data>
+<data name="xhttp"><value>Se habilitada, XHttp é modificado no XAM para permitir acesso não seguro</value></data>
+<data name="liveblock"><value>Se habilitada, o interpretador DNS bloqueia os sites da LIVE</value></data>
+<data name="livestrong"><value>Se esta opção e "liveblock" forem habilitadas, uma lista mais extensa de domínios e sites são bloqueados pelo
+interpretador DNS. (Não tem efeito se a opção "liveblock" estiver desabilitada!)</value></data>
+<data name="autoshut"><value>Se habilitada, manter o botão 'Guia' pressionado faz com o que a opção "Desligar" seja automaticamente selecionada (Habilitar esta opção afeta o funcionamento da opção "autooff")</value></data>
+<data name="autooff"><value>Se habilitada, manter o botão 'Guia' pressionado faz com o que o console seja desligado ao invés de mostrar a caixa de diálogo "Desligar Console" (Habilitar esta opção afeta o funcionamento da opção "autoshut")</value></data>
+<data name="hddtimer"><value>Se a opção "hddalive" estiver habilitada, esta opção configura a freqüência (em segundos) que o DashLaunch
+deve acionar os drives a fim de impedir que entrem no modo de economia de energia</value></data>
+<data name="hddalive"><value>Se habilitada, qualquer drive USB com um arquivo "alive.txt" no diretório raiz é mantido em funcionamento de acordo com o intervalo de tempo definido na opção "hddtimer"</value></data>
+<data name="temptime"><value>Frequência (em segundos) que as informações sobre temperaturas são transmitidas se a opção "tempbcast" estiver habilitada</value></data>
+<data name="tempport"><value>Porta que as informações sobre temperaturas são transmitidas se a opção "tempbcast" estiver habilitada</value></data>
+<data name="tempbcast"><value>Se habilitada e uma conexão de rede estiver configurada e disponível, dados sobre a temperatura do console são transmitidos no intervalo de tempo através da porta selecionada (Configurada na opção "tempport")</value></data>
+<data name="exchandler"><value>Se habilitada, erros não fatais causam a finalização do jogo ou programa ao invés de travar o console</value></data>
+<data name="fatalfreeze"><value>Se habilitada, erros fatais farão o console travar</value></data>
+<data name="fatalreboot"><value>Se habilitada, o console é completamente reinicializado se ocorrerem erros fatais
+(Sem efeito se a opção "fatalfreeze" estiver habilitada)</value></data>
+<data name="safereboot"><value>Se habilitada, o console é reinicializado via software se ocorrerem erros fatais
+(Não utilizar em jtag se o smc não estiver corrigido)</value></data>
+<data name="debugout"><value>Se habilitada, as mensagens de depuração (debug strings) são redirecionadas para a UART</value></data>
+<data name="passlaunch"><value>Se habilitada, DashLaunch não exclui os dados de inicialização (launchdata) antes de executar um programa associado a um botão de inicialização rápida</value></data>
+<data name="sockpatch"><value>Se habilitada, todos os programas tem privilégio de acesso ao protocolo socket inseguro
+(Não habilite esta opção se você não sabe para que serve)</value></data>
+<data name="fakelive"><value>Se habilitada, várias funções serão simuladas com a finalidade de fazer com que o jogo ou programa acredite estar conectado à rede "XBOX Live" (Habilitar esta opção também habilita a opção "liveblock")</value></data>
+<data name="remotenxe"><value>Se habilitada, ligar o console com o botão 'Power' do controle Infravermelho (IR) faz com que o console inicialize a Dashboard oficial (uma vez)</value></data>
+<data name="nonetstore"><value>Se habilitada, a opção "Salvar em Nuvem" não aparece no menu de seleção de "Dispositivos de Armazenamento"</value></data>
+<data name="shuttemps"><value>Se habilitada, um instantâneo das temperaturas do sistema é mostrado na tela "Desligar Console" que aparece
+quando você mantém o botão 'Guia' pressionado (Habilitar essa opção desabilita a opção "autooff")</value></data>
+<data name="devprof"><value>Se habilitada, perfis de devkit não aparecem como perfis corrompidos</value></data>
+<data name="devlink"><value>Se habilitada, dados de system link são criptografados para comunicação com devkits</value></data>
+<data name="ftpserv"><value>Se habilitada, o Programa de Configuração inicializa o servidor FTP integrado
+!! Funciona somente enquanto o programa de instalação estiver em execução !!</value></data>
+<data name="ftpport"><value>Configura a porta do servidor FTP do Programa de Configuração</value></data>
+<data name="calaunch"><value>Se habilitada, o Programa de Configuração é inicializado no modo
+Inicialização Rápida ao invés do Modo de configuração do DashLaunch</value></data>
+<data name="autoswap"><value>Se habilitada, DashLaunch troca os discos automaticamente conforme solicitado pelo jogo
+** ATENÇÃO ** Não habilite esta opção se você utiliza o plugin Freestyle ou o swap.xex!</value></data>
+<data name="nohealth"><value>Se habilitada, o pseudo vídeo de instruções e cuidados com o kinect não será exibido</value></data>
+<data name="nooobe"><value>Se habilitada, as configurações de idioma e localidade da dashboard não serão exibidas se elas já foram previamente configuradas</value></data>
+<data name="autofake"><value>Se habilitada a opção "fakelive" é automaticamente habilitada durante a execução de jogos "XBOX Live Indie"
+ou durante o uso da dashboard official. (Desabilitar esta opção também desabilita a opção "autocont")</value></data>
+<data name="fahrenheit"><value>Se habilitada, as temperaturas mostradas no programa de instalação e na tela "Desligar Console" serão
+mostradas em fahrenheit ao invés de celsius. As temperaturas continuam sendo transmitidas em celsius.</value></data>
+<data name="Fakeanim"><value>Se configurada, um programa será executado antes de qualquer opção tornar-se efetiva. Não pode ser evitado ou cancelado por nenhum botão pressionado. Utilize esta opção se pretende substituir a animação de boot</value></data>
+<data name="updserv"><value>Se habilitada, o servidor de atualização do xebuild é inicializado
+!! Funciona somente enquanto o programa de instalação estiver em execução !!</value></data>
+<data name="autofake0"><value>Digite o TitleID do jogo que você deseja que a opção "fakelive" seja temporariamente habilitada
+(Só tem efeito se a opção "autofake" estiver habilitada)</value></data>
+<data name="autofake1"><value>Digite o TitleID do jogo que você deseja que a opção "fakelive" seja temporariamente habilitada
+(Só tem efeito se a opção "autofake" estiver habilitada)</value></data>
+<data name="autofake2"><value>Digite o TitleID do jogo que você deseja que a opção "fakelive" seja temporariamente habilitada
+(Só tem efeito se a opção "autofake" estiver habilitada)</value></data>
+<data name="autofake3"><value>Digite o TitleID do jogo que você deseja que a opção "fakelive" seja temporariamente habilitada
+(Só tem efeito se a opção "autofake" estiver habilitada)</value></data>
+<data name="autofake4"><value>Digite o TitleID do jogo que você deseja que a opção "fakelive" seja temporariamente habilitada
+(Só tem efeito se a opção "autofake" estiver habilitada)</value></data>
+<data name="autofake5"><value>Digite o TitleID do jogo que você deseja que a opção "fakelive" seja temporariamente habilitada
+(Só tem efeito se a opção "autofake" estiver habilitada)</value></data>
+<data name="autofake6"><value>Digite o TitleID do jogo que você deseja que a opção "fakelive" seja temporariamente habilitada
+(Só tem efeito se a opção "autofake" estiver habilitada)</value></data>
+<data name="autofake7"><value>Digite o TitleID do jogo que você deseja que a opção "fakelive" seja temporariamente habilitada
+(Só tem efeito se a opção "autofake" estiver habilitada)</value></data>
+<data name="autofake8"><value>Digite o TitleID do jogo que você deseja que a opção "fakelive" seja temporariamente habilitada
+(Só tem efeito se a opção "autofake" estiver habilitada)</value></data>
+<data name="autofake9"><value>Digite o TitleID do jogo que você deseja que a opção "fakelive" seja temporariamente habilitada
+(Só tem efeito se a opção "autofake" estiver habilitada)</value></data>
+<data name="autocont"><value>Se habilitada, ao executar um jogo "XBOX Live Indie", a opção "contpatch" será temporariamente habilitada
+(Habilitar esta opção, também habilita a opção "autofake")</value></data>
+<data name="contpatch"><value>Se habilitada, o cabeçalho com as informações de licença dos arquivos tipo "Conteúdo Adicional" (tipo 00000002) será corrigido via software quando solicitado</value></data>
+<data name="xblapatch"><value>Se habilitada, o cabeçalho com as informações de licença dos arquivos tipo "XBOX Live Arcade" (tipo 000D0000) será corrigido via software quando solicitado</value></data>
+<data name="licpatch"><value>Se habilitada, a função da Máscara de Licença do XAM será corrigida. (Utilizada geralmente em conjunto com as
+opções "contpatch" e "xblapatch" ou quando deseja utilizar conteúdo XBLA extraído)</value></data>
+</root>

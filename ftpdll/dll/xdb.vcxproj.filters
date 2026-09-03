@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ftpd\SlimFTPd.cpp">
+      <Filter>ftpd</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpd\tree.cpp">
+      <Filter>ftpd</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpd\userdb.cpp">
+      <Filter>ftpd</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpd\vfs.cpp">
+      <Filter>ftpd</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpd\permdb.cpp">
+      <Filter>ftpd</Filter>
+    </ClCompile>
+    <ClCompile Include="ftpdll.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="resolveFunct.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="util.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ftpd\permdb.h">
+      <Filter>ftpd</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpd\tree.h">
+      <Filter>ftpd</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpd\userdb.h">
+      <Filter>ftpd</Filter>
+    </ClInclude>
+    <ClInclude Include="ftpd\vfs.h">
+      <Filter>ftpd</Filter>
+    </ClInclude>
+    <ClInclude Include="resolveFunct.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="kernel.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="xamext.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="mounts.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="types.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="util.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ftpdll.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ftpd">
+      <UniqueIdentifier>{a695737d-dd71-4115-90b4-b1e261065149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{41ea3645-c20b-43ea-87cb-cd4e6ccad377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{7e394917-ab75-4044-80a1-c64eb0d9dea8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+LIBRARY      usvr.xex
+EXPORTS
+    szModuleName   @1 DATA
+    usvrStartup    @2
+    usvrShutdown   @3
+    usvrStatus     @4
+	usvrGetConType @5
+	usvrGetPatch   @6
+	usvrSetPatch   @7

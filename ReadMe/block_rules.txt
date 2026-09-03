@@ -1,0 +1,30 @@
+pumpkin.com$ (ends with pumpkin.com)
+^pies (begins with pies)
+^pies.pumpkin.com$ (pies.pumpkin.com exactly)
+
+weaklist:
+^xemacs.xboxlive.com$
+^xeas.xboxlive.com$
+^xetgs.xboxlive.com$
+^xexds.xboxlive.com$
+^piflc.xboxlive.com$
+^siflc.xboxlive.com$
+^msac.xboxlive.com$
+^xlink.xboxlive.com$
+^xuacs.xboxlive.com$
+^sts.xboxlive.com$
+^xam.xboxlive.com$
+^notice.xbox.com$
+^macs.xbox.com$
+^rad.msn.com$
+passport.net$
+
+strong list:
+^xboxlive.com$
+^xbox.com$
+^nsatc.net$
+^microsoft.com$
+^passport.net$
+^bing.net$
+^msn.com$
+

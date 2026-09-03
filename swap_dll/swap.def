@@ -1,0 +1,3 @@
+LIBRARY      swap
+EXPORTS
+    szModuleName   @1 DATA

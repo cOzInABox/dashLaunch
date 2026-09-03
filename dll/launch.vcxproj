@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release_LTCG|Win32">
+      <Configuration>Release_LTCG</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_LTCG|Xbox 360">
+      <Configuration>Release_LTCG</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Xbox 360">
+      <Configuration>Release</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{88B6571D-729B-4591-9ECB-43FB2E420C79}</ProjectGuid>
+    <RootNamespace>launch</RootNamespace>
+    <Keyword>XenonProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">$(Configuration)\</IntDir>
+    <PreBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">true</PreBuildEventUseInBuild>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">$(OutDir)$(ProjectName).dll</OutputFile>
+    <ImageXexOutput Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">$(OutDir)$(ProjectName).xex</ImageXexOutput>
+    <RemoteRoot Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">xe:\Samples\DynamicLinkLibrary</RemoteRoot>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">$(Configuration)\</IntDir>
+    <PreBuildEventUseInBuild Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">true</PreBuildEventUseInBuild>
+    <OutputFile Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">$(OutDir)$(ProjectName).dll</OutputFile>
+    <ImageXexOutput Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">$(OutDir)$(ProjectName)_dll.xex</ImageXexOutput>
+    <RemoteRoot Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">xe:\Samples\DynamicLinkLibrary</RemoteRoot>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
+    <PreBuildEvent>
+      <Command>del /f $(SolutionDir)embed\$(ProjectName).xex
+subwcrev ../ ../rev_template.h ../svnversion.h</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/MP  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>../xkelib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;XBOX;LTCG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(IntDir)vc80.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4054;4055;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4089 /dll /entry:"_DllMainCRTStartup" /include:"XboxKrnlBuildNumber"  /ALIGN:128,4096 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>xapilib.lib;xboxkrnl.lib;libcmt.lib;xnet.lib;</AdditionalDependencies>
+      <ModuleDefinitionFile>launch.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SetChecksum>true</SetChecksum>
+      <MapExports>true</MapExports>
+      <AdditionalLibraryDirectories>../xkelib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AutomaticModuleDefinitionFile>
+      </AutomaticModuleDefinitionFile>
+      <StackCommitSize>
+      </StackCommitSize>
+    </Link>
+    <ImageXex>
+      <ConfigurationFile>xex.xml</ConfigurationFile>
+      <AdditionalSections>
+      </AdditionalSections>
+      <AdditionalOptions>
+      </AdditionalOptions>
+      <HeapSize>0</HeapSize>
+    </ImageXex>
+    <Deploy>
+      <DeploymentFiles>$(RemoteRoot)=$(ImagePath);%(DeploymentFiles)</DeploymentFiles>
+      <DeploymentType>EmulateDvd</DeploymentType>
+      <DvdEmulationType>ZeroSeekTimes</DvdEmulationType>
+    </Deploy>
+    <PostBuildEvent>
+      <Message>make retail no encryption</Message>
+      <Command>xextool -m r -e d -r a -o $(SolutionDir)embed\$(ProjectName).xex $(OutDir)$(ProjectName).xex</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <PreBuildEvent>
+      <Command>del /f $(SolutionDir)embed\$(ProjectName).xex
+subwcrev ../ ../rev_template.h ../svnversion.h</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/MP  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>../xkelib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;XBOX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProgramDataBaseFileName>$(IntDir)vc80.pdb</ProgramDataBaseFileName>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <CompileAs>CompileAsC</CompileAs>
+      <DisableSpecificWarnings>4127;4054;4055;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/ignore:4089 /dll /entry:"_DllMainCRTStartup" /include:"XboxKrnlBuildNumber"  /ALIGN:128,4096 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>xapilib.lib;xboxkrnl.lib;libcmt.lib;xnet.lib;</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>XAPI.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>launch.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalLibraryDirectories>../xkelib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ImageXex>
+      <ConfigurationFile>xex.xml</ConfigurationFile>
+      <AdditionalSections>
+      </AdditionalSections>
+    </ImageXex>
+    <Deploy>
+      <DeploymentFiles>$(RemoteRoot)=$(ImagePath);%(DeploymentFiles)</DeploymentFiles>
+      <DeploymentType>EmulateDvd</DeploymentType>
+      <DvdEmulationType>ZeroSeekTimes</DvdEmulationType>
+    </Deploy>
+    <PostBuildEvent>
+      <Message>make retail no encryption</Message>
+      <Command>xextool -m r -e d -o $(SolutionDir)embed\$(ProjectName).xex $(OutDir)$(ProjectName)_dll.xex</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_common.h" />
+    <ClInclude Include="hooks\except.h" />
+    <ClInclude Include="hooks\genericPatches.h" />
+    <ClInclude Include="hooks\HalReboot.h" />
+    <ClInclude Include="hooks\LaunchTitleEx.h" />
+    <ClInclude Include="hooks\loadPrep.h" />
+    <ClInclude Include="hooks\multidisk.h" />
+    <ClInclude Include="hooks\privs.h" />
+    <ClInclude Include="hooks\signin_state.h" />
+    <ClInclude Include="hooks\XamAppLoad.h" />
+    <ClInclude Include="hooks\XamExGetConfig.h" />
+    <ClInclude Include="hooks\xamLicense.h" />
+    <ClInclude Include="hooks\XamObfuscate.h" />
+    <ClInclude Include="hooks\XexHook.h" />
+    <ClInclude Include="hooks\xnetDns.h" />
+    <ClInclude Include="hooks\XNotifyBroadcast.h" />
+    <ClInclude Include="hooks\XSecurity.h" />
+    <ClInclude Include="hooks\_all_hooks.h" />
+    <ClInclude Include="hooks\_hook_includes.h" />
+    <ClInclude Include="iniparse.h" />
+    <ClInclude Include="launch.h" />
+    <ClInclude Include="launch_constants.h" />
+    <ClInclude Include="opts.h" />
+    <ClInclude Include="optsHandlers.h" />
+    <ClInclude Include="tasks\hdalive.h" />
+    <ClInclude Include="tasks\tempbcast.h" />
+    <ClInclude Include="tasks\_all_tasks.h" />
+    <ClInclude Include="tasks\_task_includes.h" />
+    <ClInclude Include="utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hooks\except.c" />
+    <ClCompile Include="hooks\genericPatches.c" />
+    <ClCompile Include="hooks\HalReboot.c" />
+    <ClCompile Include="hooks\LaunchTitleEx.c" />
+    <ClCompile Include="hooks\loadPrep.c" />
+    <ClCompile Include="hooks\multidisk.c" />
+    <ClCompile Include="hooks\privs.c" />
+    <ClCompile Include="hooks\signin_state.c" />
+    <ClCompile Include="hooks\XamAppLoad.c" />
+    <ClCompile Include="hooks\XamExGetConfig.c" />
+    <ClCompile Include="hooks\xamLicense.c" />
+    <ClCompile Include="hooks\XamObfuscate.c" />
+    <ClCompile Include="hooks\XexHook.c" />
+    <ClCompile Include="hooks\xnetDns.c" />
+    <ClCompile Include="hooks\XNotifyBroadcast.c" />
+    <ClCompile Include="hooks\XSecurity.c" />
+    <ClCompile Include="iniparse.c" />
+    <ClCompile Include="launch.c" />
+    <ClCompile Include="opts.c" />
+    <ClCompile Include="optsHandlers.c" />
+    <ClCompile Include="tasks\hdalive.c" />
+    <ClCompile Include="tasks\tempbcast.c" />
+    <ClCompile Include="utility.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="launch.def" />
+    <None Include="xex.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\lhelper\lhelper.vcxproj">
+      <Project>{dd049ef0-ade3-43a3-935d-31a5ae8ff91c}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\xkelib\xkelib.vcxproj">
+      <Project>{83fef217-22ee-4768-80bf-9f48d5b4564c}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

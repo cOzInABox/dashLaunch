@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<xex>
+	<format>
+		<compressed/>
+	</format>
+	
+	<gameregion>
+	   <all/>
+	</gameregion>
+	<exportcontainer name="usvr.xex"/>
+	<gameregion system = ""/>
+	<mediatypes>
+		<harddisk/>
+		<flash/>
+		<usbmass/>
+		<network/>
+		<ram/>
+		<svod/>
+		<allpackages/>
+	</mediatypes>
+
+</xex>

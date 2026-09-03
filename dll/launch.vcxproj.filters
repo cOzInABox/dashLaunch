@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{e3f0b79c-fbf9-4cb1-8558-f6a22509eb4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{74cd67fd-6a09-4ec2-841c-3559a9dcce17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{6041d5bc-a24d-4e9a-88d2-be6217db75d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\hooks">
+      <UniqueIdentifier>{204b3704-26ff-46bf-9853-cba4cd712afd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\tasks">
+      <UniqueIdentifier>{0532eccf-f330-46cb-a01a-8e839e7172a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\tasks">
+      <UniqueIdentifier>{4244320c-fb1e-4cc5-bf95-16ed3dd5c03b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\hooks">
+      <UniqueIdentifier>{2c67d133-af01-48ee-95ca-410074eb8f58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\opts">
+      <UniqueIdentifier>{106aade5-e576-47f7-84f0-7425c2021e73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\opts">
+      <UniqueIdentifier>{6b40f5e1-b76e-496d-9dee-e8f5c12c74fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_common.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="iniparse.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="launch.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="launch_constants.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="utility.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\signin_state.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\LaunchTitleEx.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\tempbcast.h">
+      <Filter>headers\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\hdalive.h">
+      <Filter>headers\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\loadPrep.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\XSecurity.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\XamAppLoad.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\xamLicense.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\xnetDns.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\XNotifyBroadcast.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\_all_hooks.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\_all_tasks.h">
+      <Filter>headers\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\_hook_includes.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\privs.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\_task_includes.h">
+      <Filter>headers\tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\except.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="opts.h">
+      <Filter>headers\opts</Filter>
+    </ClInclude>
+    <ClInclude Include="optsHandlers.h">
+      <Filter>headers\opts</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\genericPatches.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\XexHook.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\HalReboot.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\XamObfuscate.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\multidisk.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks\XamExGetConfig.h">
+      <Filter>headers\hooks</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="iniparse.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="launch.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="utility.c">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\signin_state.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\LaunchTitleEx.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\tempbcast.c">
+      <Filter>source\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\hdalive.c">
+      <Filter>source\tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\loadPrep.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\XamAppLoad.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\xamLicense.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\xnetDns.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\XNotifyBroadcast.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\XSecurity.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\privs.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\except.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="opts.c">
+      <Filter>source\opts</Filter>
+    </ClCompile>
+    <ClCompile Include="optsHandlers.c">
+      <Filter>source\opts</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\genericPatches.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\XexHook.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\HalReboot.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\XamObfuscate.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\multidisk.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks\XamExGetConfig.c">
+      <Filter>source\hooks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="launch.def">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="xex.xml" />
+  </ItemGroup>
+</Project>

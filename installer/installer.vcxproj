@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Xbox 360">
+      <Configuration>Debug</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Xbox 360">
+      <Configuration>Release</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_LTCG|Xbox 360">
+      <Configuration>Release_LTCG</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2472A231-94DA-4F33-8BF8-6B863AFA658C}</ProjectGuid>
+    <Keyword>Xbox360Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <LinkIncremental>false</LinkIncremental>
+    <PreBuildEventUseInBuild>false</PreBuildEventUseInBuild>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
+    <LinkIncremental>false</LinkIncremental>
+    <PreBuildEventUseInBuild>true</PreBuildEventUseInBuild>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <ExceptionHandling>false</ExceptionHandling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;_XBOX</PreprocessorDefinitions>
+      <CallAttributedProfiling>Disabled</CallAttributedProfiling>
+      <AdditionalIncludeDirectories>.\;Common;..\xkelib;Application;Util;ftpd;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>xactd3.lib;xuirund.lib;xuirenderd.lib;xaudiod2.lib;xmcored.lib;xmediad2.lib;d3d9d.lib;d3dx9d.lib;xgraphicsd.lib;xapilibd.lib;x3daudiod.lib;xboxkrnl.lib;xnetd.lib;xbdm.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\xkelib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ALIGN:128,4096 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Deploy>
+      <DeploymentType>CopyToHardDrive</DeploymentType>
+      <DeploymentFiles>$(RemoteRoot)=$(ImagePath)</DeploymentFiles>
+    </Deploy>
+    <PreBuildEvent>
+      <Command>cd Media
+xresources.bat $(ProjectDir)Media\ $(ProjectDir)Media\skin.xzp $(ProjectDir)Media\xzp.txt
+cd..</Command>
+      <Message>Creating resources and xzp</Message>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xextool -r a -e d -o $(OutDir)default.xex $(OutDir)$(ProjectName).xex</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>copying release files</Message>
+    </PostBuildEvent>
+    <ImageXex>
+      <ConfigurationFile>xex.xml</ConfigurationFile>
+      <AdditionalSections>skin=$(ProjectDir)Media\skin.xzp,RO;ini=$(SolutionDir)ReadMe\info_launch.ini,RO</AdditionalSections>
+    </ImageXex>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Xbox 360'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;Common;..\xkelib;Application;Util;ftpd;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalDependencies>xact3.lib;xuirun.lib;xuirender.lib;xaudio2.lib;xmcore.lib;xmedia2.lib;d3d9.lib;d3dx9.lib;xgraphics.lib;xapilib.lib;x3daudio.lib;xnet.lib;xboxkrnl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\xkelib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ALIGN:128,4096 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Deploy>
+      <DeploymentFiles>$(RemoteRoot)=$(ImagePath)</DeploymentFiles>
+      <DeploymentType>CopyToHardDrive</DeploymentType>
+      <ExcludedFromBuild>false</ExcludedFromBuild>
+    </Deploy>
+    <PreBuildEvent>
+      <Command>cd Media
+xresources.bat $(ProjectDir)Media\ $(ProjectDir)Media\skin.xzp $(ProjectDir)Media\xzp.txt
+cd..</Command>
+      <Message>Creating resources and xzp</Message>
+    </PreBuildEvent>
+    <ImageXex>
+      <ConfigurationFile>xex.xml</ConfigurationFile>
+      <AdditionalSections>skin=$(ProjectDir)Media\skin.xzp,RO;ini=$(SolutionDir)ReadMe\info_launch.ini,RO</AdditionalSections>
+    </ImageXex>
+    <PostBuildEvent>
+      <Command>xextool -r a -e d -o $(OutDir)default.xex $(OutDir)$(ProjectName).xex</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>copying release files</Message>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <PrecompiledHeaderOutputFile>$(OutDir)$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;LTCG</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\;Common;..\xkelib;Application;Util;ftpd;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalDependencies>xact3.lib;xuirunltcg.lib;xuirenderltcg.lib;xaudio2.lib;xmcore.lib;xmedia2.lib;d3d9ltcg.lib;d3dx9.lib;xgraphics.lib;xapilib.lib;x3daudioltcg.lib;xmcoreltcg.lib;xnet.lib;xboxkrnl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\xkelib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/ALIGN:128,4096 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Deploy>
+      <DeploymentType>CopyToHardDrive</DeploymentType>
+      <DeploymentFiles>$(RemoteRoot)=$(ImagePath);$(RemoteRoot)\media=$(OutDir)media</DeploymentFiles>
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </Deploy>
+    <PreBuildEvent>
+      <Command>cd Media
+call xresources.bat $(ProjectDir)Media\ $(ProjectDir)Media\skin.xzp $(ProjectDir)Media\xzp.txt 1
+cd..</Command>
+      <Message>Creating resources and xzp</Message>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>xextool -r a -e d -o $(SolutionDir)Release\Installer\default.xex $(OutDir)$(ProjectName).xex
+copy /Y /B $(ProjectDir)Media\skin_src.zip $(SolutionDir)Release\skin_src.zip
+copy /Y /B $(SolutionDir)ReadMe\info_launch.ini $(SolutionDir)Release\info_launch.ini
+copy /Y /B $(SolutionDir)ReadMe\readme.txt $(SolutionDir)Release\readme.txt
+copy /Y /B $(SolutionDir)ReadMe\launch_sysdll_exports.c $(SolutionDir)Release\launch_sysdll_exports_examples.c
+copy /Y /B $(SolutionDir)ReadMe\templog.py $(SolutionDir)Release\templog.py
+del /q  $(SolutionDir)Release\for_xxbuild.zip
+zip -j $(SolutionDir)Release\for_xxbuild.zip $(SolutionDir)embed\readme.txt $(SolutionDir)embed\launch.xex $(SolutionDir)embed\lhelper.xex
+</Command>
+    </PostBuildEvent>
+    <PostBuildEvent>
+      <Message>copying release files</Message>
+    </PostBuildEvent>
+    <ImageXex>
+      <ConfigurationFile>xex.xml</ConfigurationFile>
+      <AdditionalSections>skin=$(ProjectDir)Media\skin.xzp,RO;ini=$(SolutionDir)ReadMe\info_launch.ini,RO</AdditionalSections>
+    </ImageXex>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Application\FSDIApp.cpp" />
+    <ClCompile Include="Application\FSDIUIApp.cpp" />
+    <ClCompile Include="dashLaunch.cpp" />
+    <ClCompile Include="filerData.cpp" />
+    <ClCompile Include="filerList.cpp" />
+    <ClCompile Include="ftpd\permdb.cpp" />
+    <ClCompile Include="ftpd\SlimFTPd.cpp" />
+    <ClCompile Include="ftpd\tree.cpp" />
+    <ClCompile Include="ftpd\userdb.cpp" />
+    <ClCompile Include="ftpd\vfs.cpp" />
+    <ClCompile Include="iniData.cpp" />
+    <ClCompile Include="iniList.cpp" />
+    <ClCompile Include="installer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="optionsData.cpp" />
+    <ClCompile Include="optionsList.cpp" />
+    <ClCompile Include="sysInfo.cpp" />
+    <ClCompile Include="updSvr.cpp" />
+    <ClCompile Include="Util\DataEntry.cpp" />
+    <ClCompile Include="Util\dlDrives.cpp" />
+    <ClCompile Include="Util\logging.cpp" />
+    <ClCompile Include="Util\Nand.cpp" />
+    <ClCompile Include="Util\Resource.cpp" />
+    <ClCompile Include="Util\Strings.cpp" />
+    <ClCompile Include="Util\XboxUtil.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\usvr\usvr.vcxproj">
+      <Project>{8fd07dac-c9ab-431c-9905-4c6edcd53008}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\xkelib\xkelib.vcxproj">
+      <Project>{83fef217-22ee-4768-80bf-9f48d5b4564c}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="Common\AtgFramework2010.vcxproj">
+      <Project>{91d208a6-9936-47fd-9659-67205c3eb0ab}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\_common.h" />
+    <ClInclude Include="Application\FSDIApp.h" />
+    <ClInclude Include="Application\FSDIUIApp.h" />
+    <ClInclude Include="dashLaunch.h" />
+    <ClInclude Include="filerData.h" />
+    <ClInclude Include="filerList.h" />
+    <ClInclude Include="ftpd\permdb.h" />
+    <ClInclude Include="ftpd\SlimFTPd.h" />
+    <ClInclude Include="ftpd\tree.h" />
+    <ClInclude Include="ftpd\userdb.h" />
+    <ClInclude Include="ftpd\vfs.h" />
+    <ClInclude Include="iniData.h" />
+    <ClInclude Include="iniList.h" />
+    <ClInclude Include="installer.h" />
+    <ClInclude Include="optionsData.h" />
+    <ClInclude Include="optionsList.h" />
+    <ClInclude Include="sysInfo.h" />
+    <ClInclude Include="updSvr.h" />
+    <ClInclude Include="Util\DataEntry.h" />
+    <ClInclude Include="Util\dlDrives.h" />
+    <ClInclude Include="Util\logging.h" />
+    <ClInclude Include="Util\Nand.h" />
+    <ClInclude Include="Util\patchinfo.h" />
+    <ClInclude Include="Util\Resource.h" />
+    <ClInclude Include="Util\SimpleIni.h" />
+    <ClInclude Include="Util\Strings.h" />
+    <ClInclude Include="Util\XboxUtil.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xex.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

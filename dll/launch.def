@@ -1,0 +1,16 @@
+LIBRARY      launch.xex
+EXPORTS
+    ldat @1 DATA
+    dlaunchStartSysModule @2
+	dlaunchShutdown @3
+	dlaunchForceIniLoad @4
+	dlaunchGetNumOpts @5
+	dlaunchGetOptInfo @6
+	dlaunchGetOptVal @7
+	dlaunchSetOptVal @8
+	dlaunchGetOptValByName @9
+	dlaunchSetOptValByName @10
+	dlaunchGetDriveList @11
+	dlaunchGetDriveInfo @12
+	dlaunchBootParseButtons @13
+	dlaunchPluginPath @ 14 DATA

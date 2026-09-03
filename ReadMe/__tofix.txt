@@ -1,0 +1,16 @@
+add onetime boot option?
+poll usb option?
+stickylaunch
+
+dll
+relaunch
+unload
+
+add dash commands to launch params? (ie: game list)
+
+is there no way to mount a con from sys thread?
+
+
+make it multi firmware compatible?
+block MS servers
+update hv syscalls

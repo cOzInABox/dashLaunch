@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<xex>
+	<version major="2" minor="0" build="13146" qfe="0"/>.
+	<titleid id="0xFFFE07D1"/>
+	<format>
+		<compressed/>
+	</format>
+	<privilege id="0"/>
+	<gameregion>
+	   <all/>
+	</gameregion>
+	<mediatypes>
+		<harddisk/>
+		<flash/>
+		<usbmass/>
+		<network/>
+		<ram/>
+		<svod/>
+		<allpackages/>
+	</mediatypes>
+</xex>
